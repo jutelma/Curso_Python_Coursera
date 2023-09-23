@@ -73,3 +73,8 @@ print_seconds(1,2,3)
 #output will print to the screen
 
 # Resultado: 3723
+
+
+# Cual es el proposito de la palabra clave def?
+
+# R. La palabra clave def en Python se utiliza para definir una función.
