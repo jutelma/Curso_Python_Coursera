@@ -42,7 +42,6 @@ Devolver un valor de resultado"""
 # Esta función calcula el número de días en un número variable de
 # años, meses y días. Estas variables son proporcionadas por el usuario y
 # se pasan a la función a través de los parámetros de la función.
-
 def find_total_days(years, months, days):
     # Asigne una variable para contener los cálculos del número de días en
     # un año (años*365) más el número de días de un mes (meses*30) más
@@ -55,6 +54,8 @@ def find_total_days(years, months, days):
 # Llamada a función con valores de parámetros proporcionados por el usuario.
 
 print(find_total_days(2, 5, 23))
+
+#903 resultado.
 
 """Grupo de habilidades 2
 
@@ -69,23 +70,27 @@ Convierta el valor de retorno de un tipo de datos flotante a una cadena para la 
 Llame a la función y realice un cálculo sobre el valor de retorno dentro de una declaración print()"""
 
 
-# This function converts fluid ounces to milliliters and returns the
-# result of the conversion.
+# Esta función convierte onzas líquidas a mililitros y devuelve el
+# resultado de la conversión.
 def convert_volume(fluid_ounce):
-    # Calculate value of the "ml" variable using the parameter variable
-    # "fluid_ounce". There are approximately 29.5 milliliters in 1 fluid
-    # ounce.
+    # Calcular el valor de la variable "ml" usando la variable de parámetro
+    # "onza_fluida". Hay aproximadamente 29,5 mililitros en 1 líquido.
+    # onza.
     ml = fluid_ounce * 29.5
-    # Return the result of the calculation.
+    # Devuelve el resultado del cálculo.
     return ml
 
 
-# Call the conversion from within the print() function using 2 fluid
-# ounces. Convert the return value from a float to a string.
+# Llame a la conversión desde la función print() usando 2 fluidos
+# onzas. Convierta el valor de retorno de un flotante a una cadena.
 print("The volume in millimeters is " + str(convert_volume(2)))
 
-# Call the function again and double the 2 fluid ounces from within
-# the print function.
+# Llame a la función nuevamente y duplique las 2 onzas líquidas desde adentro
+# la función de impresión.
 print("The volume in millimeters is " + str(convert_volume(2) * 2))
 # Alternative calculation:
 # print("The volume in millimeters is " + str(convert_volume(4))
+
+#resultado
+# The volume in millimeters is 59.0
+# The volume in millimeters is 118.0
