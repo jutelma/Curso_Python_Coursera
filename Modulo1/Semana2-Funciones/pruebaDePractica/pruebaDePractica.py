@@ -1,11 +1,11 @@
 # 1. Esta funsíon convierte millas a kilometros (km)
 # 1. Complete el código para devolver el resultado de la conversíon.
 
-#NOTA: Los siguientes elementos ocurren fuera. No intente cambiar las sanggrías en el código asociado o recibira un
+# NOTA: Los siguientes elementos ocurren fuera. No intente cambiar las sanggrías en el código asociado o recibira un
 #error.
-#2. Llame a la funsíon para convertir la distancia del viaje de millas a kilómetros.
-#3. Complete el espaio en blanco para imprimir el resultado de la vonversíon.
-#4 Calcule el viaje de ida y vuelta en kilómetros duplicando el resultado y complete el espacio en blanco para imprimir
+# 2. Llame a la funsíon para convertir la distancia del viaje de millas a kilómetros.
+# 3. Complete el espaio en blanco para imprimir el resultado de la vonversíon.
+# 4 Calcule el viaje de ida y vuelta en kilómetros duplicando el resultado y complete el espacio en blanco para imprimir
 # el resultado.
 
 

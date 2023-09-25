@@ -1,3 +1,5 @@
+
+
 """
     Operadores de comparación con cadenas
 
@@ -113,13 +115,15 @@ False
 # elementos de diferentes tipos de datos usando el operador menor que <. El
 # Los operadores mayor que > y menor que < no se pueden usar para comparar
 # dos tipos de datos diferentes.
-print("Five" < 6)
-"""
-Error on line 1:
-    print("Five" < 6)
-TypeError: '<' not supported between instances of 'str' and 'int'
 
-"""
+print("Five" < 6)
+
+#Error on line 1:
+
+print("Five" < 6)
+
+#TypeError: '<' not supported between instances of 'str' and 'int'
+
 """
     PARTE 3: Operadores mayor o igual a >= y menor que o igual a <=
     Los operadores mayor o igual a >= y menor o igual a <= también se pueden usar con cadenas. Al igual que los otros 
@@ -143,30 +147,19 @@ TypeError: '<' not supported between instances of 'str' and 'int'
        3. "piña" >= "piña"
 """
 
-# Use the Unicode chart in Part 2 to determine if the Unicode values of
-# the first letters of each string are higher, lower, or equal to one
-# another.
+# Utilice el gráfico Unicode de la Parte 2 para determinar si los valores Unicode de
+# las primeras letras de cada cadena son mayores, menores o iguales a uno
+# otro.
 
 
-var1 = "my computer" >= "my chair"
-var2 = "Spring" <= "Winter"
-var3 = "pineapple" >= "pineapple"
+var1 = ord("m") >= ord("m")
+var2 = ord("S" )<= ord("W")
+var3 = ord("p") >= ord("p")
 
 print("Is \"my computer\" greater than or equal to \"my chair\"? Result: ", var1)
 print("Is \"Spring\" less than or equal to \"Winter\"? Result: ", var2)
 print("Is \"pineapple\" less than or equal to \"pineapple\"? Result: ", var3)
 
 
-"""
-    PARTE 4: Práctica
-    
-    Si desea practicar más usando los operadores de comparación ( == , != , > , < , >= , <= ) con cadenas, no dude en 
-    crear sus propias comparaciones usando el bloque de código a continuación. Tenga en cuenta que no hay comentarios 
-    asociados con este bloque de código. 
-    
-    1
-    
-
-"""
 
 
