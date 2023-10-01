@@ -284,4 +284,4 @@ def round_up(number):
     return x * whole_number
 
 # Llama a la función con el valor del parámetro 35.
-print(round_up(35))  # Should print 40
+print(round_up(35))  # Debería imprimir 40
