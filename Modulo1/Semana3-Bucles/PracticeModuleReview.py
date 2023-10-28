@@ -1,5 +1,5 @@
 # Introduction to loops
-# Whats is a while loop?
+# What is a while loop?
 
 x = 0
 while x < 5:
