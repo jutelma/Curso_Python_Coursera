@@ -8,7 +8,7 @@ aprendió sobre la importancia de inicializar variables y cómo resolver bucles 
 break .
 
 
-mientras bucles
+Mientras bucles
 
 Un bucle while ejecuta el cuerpo del bucle mientras una condición especificada permanece verdadera. Se utilizan
 comúnmente cuando hay un número desconocido de operaciones por realizar y es necesario verificar una condición en cada
@@ -30,7 +30,7 @@ while result <= 50:
     result = multiplier * 5
 print("Done")
 
-# Este bucle while imprime los múltiplos de 5 entre 1 y 50. El
+# Este bucle while imprime los múltiplos de 5 entre 1 y 50. En
 # La variable "multiplicadora" se inicializa con el valor inicial de 1.
 # La variable "resultado" se inicializa con el valor del
 # variable "multiplicadora" multiplicada por 5.
@@ -86,15 +86,20 @@ Los problemas de codificación del próximo cuestionario de práctica incluirán
 preocupes si estás oxidado en matemáticas. Tendrás mucho apoyo con estos conceptos en el cuestionario. La siguiente es 
 una descripción general rápida de los términos matemáticos que encontrará en el cuestionario:  
 
- · números primos : enteros que tienen solo dos factores, que son el número mismo multiplicado por 1. El número primo más bajo es 2. 
+ · números primos : enteros que tienen solo dos factores, que son el número mismo multiplicado por 1. El número primo 
+ más bajo es 2. 
 
- · factores primos : números primos que son factores de un número entero. Por ejemplo, los números primos 2 y 5 son los factores primos del número 10 (2x5=10). Los factores primos de un número entero no producirán un resto cuando se usen para dividir ese número entero. 
+ · factores primos : números primos que son factores de un número entero. Por ejemplo, los números primos 2 y 5 son los 
+ factores primos del número 10 (2x5=10). Los factores primos de un número entero no producirán un resto cuando se usen 
+ para dividir ese número entero. 
 
- · divisor : un número (denominador) que se utiliza para dividir otro número (numerador). Por ejemplo, si el número 10 se divide entre 5, el número 5 es el divisor.
+ · divisor : un número (denominador) que se utiliza para dividir otro número (numerador). Por ejemplo, si el número 10 
+ se divide entre 5, el número 5 es el divisor.
 
  · suma de todos los divisores de un número - El resultado de sumar todos los divisores de un número.  
 
- · tabla de multiplicar : un número entero multiplicado por una serie de números y sus resultados formateados como una tabla o una lista. Por ejemplo:
+ · tabla de multiplicar : un número entero multiplicado por una serie de números y sus resultados formateados como una 
+ tabla o una lista. Por ejemplo:
 
                  4x1=4 4x2=8 4x3=12 4x4=16 4x5=20
 
@@ -112,6 +117,7 @@ Grupo de habilidades 1
  · Incrementar un valor dentro de un bucle while
  
 """
+
 
 # Esta función cuenta el número de factores enteros para un
 # Variable "número_dado", pasada a través de los parámetros de la función.
@@ -133,7 +139,7 @@ def count_factors(given_number):
     # El ciclo while se ejecutará mientras el "factor" sea aún menor que
     # la variable "número_dado".
     while factor < given_number:
-        # Este bloque "si" comprueba si el "número_dado" se puede dividir por
+        # Este bloque "sí" comprueba si el "número_dado" se puede dividir por
         # la variable "factor" sin dejar resto. El módulo
         # operador % se utiliza para probar un resto.
         if given_number % factor == 0:
@@ -167,14 +173,14 @@ Grupo de habilidades 2
 
 
 # Esta función genera una tabla de suma. Está escrito para terminar después
-# imprimiendo 5 líneas de la tabla de suma, pero se saldrá de la
+# imprimiendo 5 líneas de la tabla de suma, pero se saldrá del
 # bucle si la variable "my_sum" excede 20.
 
 # La función acepta una variable "número_dado" a través de su
 # parámetros.
 def addition_table(given_number):
-    # Las variables "iteated_number" y "my_sum" se inicializan con
-    # el valor de 1. Aunque la variable "my_sum" no necesita ninguna
+    # Las variables "iterated_number" y "my_sum" se inicializan con
+    # el valor de 1. Aunque la variable "my_sum" no necesita ningún
     # valor inicial específico, todavía se le debe asignar un tipo de datos
     # antes de ser utilizado en el ciclo while. Inicializando "my_sum"
     # con cualquier número entero, el tipo de datos se establecerá en int.
@@ -194,7 +200,7 @@ def addition_table(given_number):
             # Si es Verdadero, utilice la palabra clave break para salir del ciclo.
             break
         # Si es falso, el intérprete de Python pasará a la siguiente línea.
-        # en el bucle while después de que finalice la declaración if.
+        # En el bucle while después de que finalice la declaración if.
 
         # La función de impresión generará el "número_dado" más
         # el "número_iterado" es igual a "mi_suma".

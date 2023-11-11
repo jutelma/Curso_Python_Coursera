@@ -131,7 +131,6 @@ print(all_numbers(-1, 1))  # Should be -1 0 1
 print(all_numbers(0, 5))  # Should be 0 1 2 3 4 5
 print(all_numbers(0, 0))  # Should be 0
 
-
 # Pregunta 7
 # El siguiente código genera un error cuando se ejecuta. ¿Cuál es el motivo del error?
 
@@ -165,15 +164,15 @@ print(all_numbers(0, 0))  # Should be 0
 # Respuesta 2
 # El siguiente código provoca un bucle infinito. ¿Puedes descubrir qué es lo incorrecto y cómo solucionarlo?
 
-def count_to_ten():
-    # Loop through the numbers from first to last
-    x = 1
-    while x <= 10:
-        print(x)
-        x = 1
+# def count_to_ten():
+# Loop through the numbers from first to last
+#    x = 1
+#   while x <= 10:
+#       print(x)
+#        x = 1
 
 
-count_to_ten()
+# count_to_ten()
 # Should print:
 # 1
 # 2
