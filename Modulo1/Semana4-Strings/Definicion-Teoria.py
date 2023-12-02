@@ -301,7 +301,7 @@ Ejemplos:
 
 >>> imprimir(f'Hola {nombre}')
 
-Hola miqueas
+Hola Miqueas
 
  
 
@@ -316,3 +316,193 @@ Hola miqueas
 Artículo: Copa Morada - Cantidad: 5 - Precio: 16.25
 
 """
+"""
+Guía de estudio  Strings
+
+Esta guía de estudio proporciona un resumen de referencia rápida de lo que aprendió en esta lección y sirve como guía 
+para la próxima prueba de práctica. Las lecturas de cadenas en esta sección son excelentes guías de sintaxis que lo 
+ayudarán en el cuestionario de práctica de cadenas.
+
+En el segmento Cadenas, aprendió sobre las partes de una cadena, la indexación y división de cadenas, la creación de 
+nuevas cadenas, los métodos y operaciones de cadenas y el formato de cadenas.
+
+
+Conocimiento
+
+Operaciones y métodos de cadenas
+
+    · .format() : método de cadena que se puede utilizar para concatenar y formatear cadenas. 
+
+        · {:.2f} : dentro del método .format(), limita una variable de punto flotante a 2 decimales. El número de 
+          decimales se puede personalizar.
+
+    · len(cadena) : operación de cadena que devuelve la longitud de la cadena.
+
+    · string[x] : operación de cadena que accede al carácter en el índice [x] de la cadena, donde la indexación 
+      comienza en cero.
+
+    · string[x:y] - Operación de cadena que accede a una subcadena que comienza en el índice [x] y termina en el 
+      índice [y-1]. Si se omite x, su valor predeterminado será 0. Si se omite y, el valor predeterminado será 
+      len(cadena).
+
+    · string.replace(old, new) : método de cadena que devuelve una nueva cadena donde todas las apariciones de una 
+      subcadena antigua han sido reemplazadas por una nueva subcadena.
+
+    · string.lower() : método de cadena que devuelve una copia de la cadena con todos los caracteres en minúscula.
+
+    
+Habilidades de codificación
+
+Grupo de habilidades 1
+    · Utilice un bucle for para recorrer cada letra de una cadena.
+
+    · Agrega un carácter al frente de una cadena.
+
+    · Agrega un carácter al final de una cadena.
+
+    · Utilice el método de cadena .lower() para convertir el caso (mayúsculas/minúsculas) de las letras dentro de una 
+      variable de cadena. Este método se utiliza a menudo para eliminar casos como factor al comparar dos cadenas. Por 
+      ejemplo, todo “gato” en minúscula no es igual a “Gato” porque “Gato” contiene una letra mayúscula. Para poder 
+      comparar las dos cadenas y ver si son la misma palabra, puede usar el método de cadena .lower() para eliminar las 
+      mayúsculas como factor en la comparación de cadenas.
+      
+"""
+
+
+# This function accepts a given string and checks each character of
+# the string to see if it is a letter or not.
+# If the character is a
+# letter, that letter is added to the end of the string variable
+# "forwards" and to the beginning of the string variable "backwards".
+def mirrored_string(my_string):
+    # Two variables are initialized as string data types using empty
+    # quotes.
+    # The variable "forwards" will hold the "my_string"
+    # minus any character that is not a letter.
+    # The "backwards"
+    # variable will hold the same letters as "forwards", but in
+    #  reverse order.
+    forwards = ""
+    backwards = ""
+
+    # The for loop iterates through each character of the "my_string"
+    for character in my_string:
+
+        # The if-statement checks if the character is not a space.
+        if character.isalpha():
+            # If True, the body of the loop adds the character to the
+            #  end of "forwards" and to the front of
+            # "backwards".
+            forwards += character
+            backwards = character + backwards
+
+        # If False (meaning the character is not a letter), no action
+        # is needed.
+        # This coding approach results prevent any
+        # non-alphabetical characters from being written to the
+        # "forwards" and "backwards" variables.
+        # The for loop will
+        # restart until all characters in "my_string" have been
+        # processed.
+
+    # The final if-statement compares the "forwards" and "backwards"
+    # strings to see if the letters are the same both forwards and
+    # backwards.
+    # Since Python is case-sensitive, the two strings will
+    # need to be converted to use the same case for this comparison.
+    if forwards.lower() == backwards.lower():
+        return True
+    return False
+
+
+print(mirrored_string("12 Noon"))  # Should be True
+print(mirrored_string("Was it a car or cat I saw"))  # Should be False
+print(mirrored_string("'eve, Madam Eve"))  # Should be True
+
+"""
+Grupo de habilidades 2
+
+    · Utilice el método format() , con {} marcadores de posición para datos variables, para crear una nueva cadena.
+
+    · Utilice una expresión de formato, como {:.2f} , para formatear una variable flotante y configurar el número de 
+decimales que se mostrarán para la variable flotante.
+
+"""
+
+
+# This function converts measurement equivalents.
+# Output is formatted
+# as, "x ounces equal y pounds", with y limited to 2 decimal places.
+def convert_weight(ounces):
+    # Conversion formula: 1 pound = 16 ounces
+    pounds = ounces / 16
+
+    # The result is composed using the .format() method.
+    # There are two
+    # placeholders in the string: the first is for the "ounces"
+    # variable and the second is for the "pounds" variable.
+    # The second
+    # placeholder formats the float result of the conversion
+    # calculation to be limited to 2 decimal places.
+    result = "{} ounces equals {:.2f} pounds".format(ounces, pounds)
+    return result
+
+
+print(convert_weight(12))  # Should be: 12 ounces equal 0.75 pounds
+print(convert_weight(50.5))  # Should be: 50.5 ounces equal 3.16 pounds
+print(convert_weight(16))  # Should be: 16 ounces equal 1.00 pounds
+
+"""
+Grupo de habilidades 4  
+
+    · Utilice el método .replace() para reemplazar parte de una cadena.  
+
+    · Utilice la función len() para obtener el número de posiciones de índice en una cadena.
+
+    · Corta una cadena en una posición de índice específica.
+    
+"""
+
+
+# This function checks a given schedule entry for an old date and, if
+# found, the function replaces it with a new date.
+def replace_date(schedule, old_date, new_date):
+    # Check if the given "old_date" appears at the end of the given
+    # string variable "schedule".
+    if schedule.endswith(old_date):
+        # If True, the body of the if-block will run.
+        # The variable "n" is
+        # used to hold the slicing index position.
+        # The len() function
+        # is used to measure the length of the string "new_date".
+        p = len(old_date)
+
+        # The "new_schedule" string holds the updated string with the
+        # old date replaced by the new date.
+        # The schedule[:-p] part of
+        # the code trims the "old_date" substring from "schedule"
+        # starting at the final index position (or right-side) counting
+        # towards the left the same number of index positions as
+        # calculated from len(old_date).
+        # Then, the code schedule[-p: ]
+        # starts the indexing position at the slot where the first
+        # character of the "old_date" used to be positioned.
+        # The
+        # .replace(old_date, new_date) code inserts the "new_date" into
+        # the position where the "old_date" used to exist.
+        new_schedule = schedule[:-p] + schedule[-p:].replace(old_date, new_date)
+
+        # Returns the schedule with the new date.
+        return new_schedule
+
+    # If the schedule does not end with the old date, then return the
+    # original sentence without any modifications.
+    return schedule
+
+
+print(replace_date("Last year’s annual report will be released in March 2023", "2023", "2024"))
+# Should display "Last year’s annual report be released in March 2024"?
+print(replace_date("In April, the CEO will hold a conference", "April", "May"))
+# Should display "In April, the CEO will hold a conference"
+print(replace_date("The convention is scheduled for October", "October", "June"))
+# Should display "The convention is scheduled for June"
