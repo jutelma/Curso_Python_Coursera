@@ -369,47 +369,47 @@ Grupo de habilidades 1
 """
 
 
-# This function accepts a given string and checks each character of
-# the string to see if it is a letter or not.
-# If the character is a
-# letter, that letter is added to the end of the string variable
-# "forwards" and to the beginning of the string variable "backwards".
+# Esta función acepta una cadena determinada y verifica cada carácter de
+# la cadena para ver si es una letra o no.
+# Si el personaje es una
+# letra, esa letra se agrega al final de la variable de cadena
+# "hacia adelante" y al principio de la variable de cadena "hacia atrás".
 def mirrored_string(my_string):
-    # Two variables are initialized as string data types using empty
-    # quotes.
-    # The variable "forwards" will hold the "my_string"
-    # minus any character that is not a letter.
-    # The "backwards"
-    # variable will hold the same letters as "forwards", but in
-    #  reverse order.
+    # Dos variables se inicializan como tipos de datos de cadena usando vacío
+    # citas.
+    # La variable "forwards" contendrá "my_string"
+    # menos cualquier carácter que no sea una letra.
+    # Los "al revés"
+    # La variable contendrá las mismas letras que "forwards", pero en
+    #  orden inverso.
     forwards = ""
     backwards = ""
 
-    # The for loop iterates through each character of the "my_string"
+    # El bucle for itera a través de cada carácter de "my_string"
     for character in my_string:
 
-        # The if-statement checks if the character is not a space.
+        # La declaración if verifica si el carácter no es un espacio.
         if character.isalpha():
-            # If True, the body of the loop adds the character to the
-            #  end of "forwards" and to the front of
-            # "backwards".
+            # Si es Verdadero, el cuerpo del bucle agrega el carácter al
+            # final de "adelante" y al frente de
+            # "al revés".
             forwards += character
             backwards = character + backwards
 
-        # If False (meaning the character is not a letter), no action
-        # is needed.
-        # This coding approach results prevent any
-        # non-alphabetical characters from being written to the
-        # "forwards" and "backwards" variables.
-        # The for loop will
-        # restart until all characters in "my_string" have been
-        # processed.
+        # Si es falso (lo que significa que el carácter no es una letra), no se realiza ninguna acción
+        # es necesario.
+        # Los resultados de este enfoque de codificación evitan cualquier
+        # carácter no alfabéticos que se escriben en la Variable
+        #  "hacia adelante" y "hacia atrás".
+        # El bucle for
+        # reiniciar hasta que se hayan eliminado todos los caracteres de "my_string"
+        # procesada.
 
-    # The final if-statement compares the "forwards" and "backwards"
-    # strings to see if the letters are the same both forwards and
-    # backwards.
-    # Since Python is case-sensitive, the two strings will
-    # need to be converted to use the same case for this comparison.
+        # La declaración if final compara "hacia adelante" y "hacia atrás"
+        # cadenas para ver si las letras son iguales tanto hacia adelante como hacia atrás
+        # al revés.
+        # Dado que Python distingue entre mayúsculas y minúsculas, las dos cadenas
+        # deben convertirse para utilizar el mismo caso en esta comparación.
     if forwards.lower() == backwards.lower():
         return True
     return False
@@ -430,20 +430,20 @@ decimales que se mostrarán para la variable flotante.
 """
 
 
-# This function converts measurement equivalents.
-# Output is formatted
-# as, "x ounces equal y pounds", with y limited to 2 decimal places.
+# Esta función convierte equivalentes de medidas.
+# La salida está formateada
+# como, "x onzas equivalen a y libras", con y limitada a 2 decimales.
 def convert_weight(ounces):
-    # Conversion formula: 1 pound = 16 ounces
+    # Fórmula de conversión: 1 libra = 16 onzas
     pounds = ounces / 16
 
-    # The result is composed using the .format() method.
-    # There are two
-    # placeholders in the string: the first is for the "ounces"
-    # variable and the second is for the "pounds" variable.
-    # The second
-    # placeholder formats the float result of the conversion
-    # calculation to be limited to 2 decimal places.
+    # El resultado se compone utilizando el método .format().
+    # Hay dos
+    # marcadores de posición en la cadena: el primero es para las "onzas"
+    # variable y la segunda es para la variable "libras".
+    # El segundo
+    # marcador de posición formatea el resultado flotante de la conversión
+    # el cálculo se limitará a 2 decimales.
     result = "{} ounces equals {:.2f} pounds".format(ounces, pounds)
     return result
 
@@ -464,39 +464,38 @@ Grupo de habilidades 4
 """
 
 
-# This function checks a given schedule entry for an old date and, if
-# found, the function replaces it with a new date.
+# Esta función verifica una entrada de programación determinada para una fecha anterior y, si
+# encontrado, la función lo reemplaza con una nueva fecha.
 def replace_date(schedule, old_date, new_date):
-    # Check if the given "old_date" appears at the end of the given
-    # string variable "schedule".
+    # Compruebe si la "fecha_antigua" dada aparece al final de la información dada
+    # variable de cadena "horario".
     if schedule.endswith(old_date):
-        # If True, the body of the if-block will run.
-        # The variable "n" is
-        # used to hold the slicing index position.
-        # The len() function
-        # is used to measure the length of the string "new_date".
+        # Si es Verdadero, se ejecutará el cuerpo del bloque if.
+        # La variable "n" es
+        # utilizado para mantener la posición del índice de corte.
+        # La función len()
+        # se utiliza para medir la longitud de la cadena "new_date".
         p = len(old_date)
 
-        # The "new_schedule" string holds the updated string with the
-        # old date replaced by the new date.
-        # The schedule[:-p] part of
-        # the code trims the "old_date" substring from "schedule"
-        # starting at the final index position (or right-side) counting
-        # towards the left the same number of index positions as
-        # calculated from len(old_date).
-        # Then, the code schedule[-p: ]
-        # starts the indexing position at the slot where the first
-        # character of the "old_date" used to be positioned.
-        # The
-        # .replace(old_date, new_date) code inserts the "new_date" into
-        # the position where the "old_date" used to exist.
+        # La cadena "new_schedule" contiene la cadena actualizada con la
+        # fecha anterior reemplazada por la nueva fecha.
+        # La parte del cronograma[:-p] del
+        # código recorta la subcadena "old_date" de "schedule"
+        # comenzando en la posición final del índice (o lado derecho) contando
+        # hacia la izquierda el mismo número de posiciones de índice que
+        # calculado a partir de len(old_date).
+        # Luego, el código de programación[-p:]
+        # inicia la posición de indexación en la ranura donde se encuentra el primero
+        # carácter de la "fecha_antigua" que solía colocarse.
+        # El código .replace(old_date, new_date) inserta la "new_date" en
+        # la posición donde solía existir la "fecha_antigua".
         new_schedule = schedule[:-p] + schedule[-p:].replace(old_date, new_date)
 
-        # Returns the schedule with the new date.
+        # Devuelve el cronograma con la nueva fecha.
         return new_schedule
 
-    # If the schedule does not end with the old date, then return the
-    # original sentence without any modifications.
+    # Si el programa no termina con la fecha anterior, entonces devuelva la
+    # frase original sin modificaciones.
     return schedule
 
 
