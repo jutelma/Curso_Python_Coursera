@@ -68,7 +68,101 @@ Iterando sobre listas usando Enumerate
 Cuando cubrimos los bucles for , mostramos el ejemplo de iteración sobre una
 lista. Esto le permite iterar sobre cada elemento de la lista, exponiendo el elemento al bucle for como una variable.
 Pero ¿qué pasa si quieres acceder a los elementos de una lista, junto con el índice del elemento en cuestión? Puedes
-hacer esto usando la función enumerar() . La función enumérate() toma una lista como parámetro y devuelve una tupla
+hacer esto usando la función enumerar() . La función enumérate() toma una lista como parámetro y devuelve una tuple
 para cada elemento de la lista. El primer valor de la tuple es el índice y el segundo valor es el elemento mismo.
 
+Ejemplos de comprensión de listas
+Puede crear una lista a partir de una secuencia usando un bucle for , pero hay una
+manera más sencilla de hacerlo usando una lista por comprensión. Las listas por comprensión le permiten crear una
+nueva lista a partir de una secuencia o un rango en una sola línea.
+
+
+Comprensión de listas simples
+Por ejemplo, [ x*2 for x in range(1,11) ] es una lista de comprensión simple. Esta
+única línea de código itera en un rango de 1 a 10, multiplica cada elemento en el rango por 2 y crea una nueva lista
+a partir de todos los múltiplos de 2 de 2 a 20.
+
 """
+# Simple List Comprehension
+print("List comprehension result:")
+
+# The following list comprehension compacts several lines
+# of code into one line:
+print([x * 2 for x in range(1, 11)])
+
+### Long form for loop
+print("Long form code result:")
+
+# The list comprehension above accomplishes the same result as
+# the long form version of the code:
+my_list = []
+for x in range(1, 11):
+    my_list.append(x * 2)
+print(my_list)
+
+# Click Run to compare the two results.
+
+"""Comprensión de listas con declaración condicional También puede utilizar condicionales con listas por comprensión 
+para crear declaraciones aún más complejas y poderosas. Puede hacer esto agregando una declaración if al final de la 
+lista de comprensión. Por ejemplo, [ x for x in range(1,101) if x % 10 == 0 ] genera una nueva lista que contiene 
+todos los números enteros divisibles por 10 de 1 a 100. La declaración if evalúa cada valor en el rango de 1 a 100 a 
+compruebe si es divisible por 10. Si lo es, el número se agrega a una nueva lista."""
+
+# List Comprehension with Conditional Statement
+print("List comprehension result:")
+
+# The following list comprehension compacts multiple lines
+# of code into one line:
+print([x for x in range(1, 101) if x % 10 == 0])
+
+# Long form for loop with nested if-statement
+print("Long form code result:")
+
+# The list comprehension above accomplishes the same result as
+# the long form version of the code:
+my_list = []
+for x in range(1, 101):
+    if x % 10 == 0:
+        my_list.append(x)
+print(my_list)
+
+# Click Run to observe the two results.
+
+"""Las listas por comprensión pueden ser realmente poderosas, pero también pueden ser complejas, lo que resulta en un 
+código difícil de leer. Tenga cuidado al usarlos, ya que podría dificultar que otra persona que mire su código 
+comprenda fácilmente lo que está haciendo. Es una buena práctica agregar comentarios descriptivos sobre cualquier 
+lista por comprensión utilizada en su código. Esto ayuda a comunicar el propósito de la lista por comprensión a otros 
+codificadores. Los comentarios también le ayudarán a recordar el objetivo del código cuando realice futuras adiciones 
+y mantenimiento de código.
+
+  
+
+Ejercicio práctico 
+
+Este ejercicio le mostrará cómo escribir una lista de comprensión para crear una lista de números 
+al cuadrado (n*n). Debe devolver una lista de cuadrados de números consecutivos entre el "inicio" y el "fin" 
+inclusive . Por ejemplo, squares(2, 3) debería devolver una lista que contenga [4, 9].
+
+1 La función recibe las variables “inicio” y “fin” a través de los parámetros de la función.  
+
+2 En la línea de retorno , comience ingresando los corchetes de lista []
+
+3 Entre corchetes [ ], ingrese la expresión aritmética para elevar al cuadrado una variable “n”. 
+
+4 A la derecha de la expresión cuadrada, escriba un bucle for que itere sobre "n" en un rango desde las variables de 
+"inicio" hasta "final".
+
+5 Asegúrese de que el valor del rango "final" esté incluido en el rango() añadiéndole 1.
+
+6 ¡Ejecute su código para ver si funciona! Si es necesario, la solución a este código se incluye en el archivo "
+Guía de estudio: enumerar operaciones y métodos
+”leyendo en “Grupo de habilidades 2” (lista de comprensiones). """
+
+
+def squares(start, end):
+    return [i ** 2 for i in range(start, end + 1)]
+
+
+print(squares(2, 3))  # Should print [4, 9]
+print(squares(1, 5))  # Should print [1, 4, 9, 16, 25]
+print(squares(0, 10))  # Should print [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
