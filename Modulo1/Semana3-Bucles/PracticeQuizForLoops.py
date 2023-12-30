@@ -38,7 +38,7 @@ for n in range(0, 36 + 1, 6):
 
 
 # Pregunta 3
-# ¿Que bucles for imprimiran todos los numeros pares del 0 al 18? Seleccione todas las que correspondan.
+# ¿Que bucles for imprimirán todos los numeros pares del 0 al 18? Seleccione todas las que correspondan.
 
 for n in range(19):
     if n % 2 == 0:
@@ -72,7 +72,7 @@ for n in range(10):
 # comienza con x=1 y termina con x=10.
 
 for x in range(1, 11):
-  print(x**3)
+    print(x ** 3)
 
 # Respuesta Tienes el código para imprimir los primeros 10 cubos.
 

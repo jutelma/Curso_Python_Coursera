@@ -123,3 +123,34 @@ escape común es \t, para tabulación.
 with open("hello_world.txt") as text:
     for line in text:
         print(line.strip())
+
+"""
+Revisión: escritura de archivos
+
+Introducción
+Esta lectura de seguimiento está organizada para que coincida con el contenido del vídeo que sigue. Contiene el mismo 
+código que se muestra en el siguiente vídeo. Estos bloques de código le brindarán la oportunidad de ver cómo está 
+escrito el código, le permitirán practicar su ejecución y pueden usarse como referencia para consultar. 
+
+Puede seguir la lectura mientras el instructor analiza el código o revisar el código después de ver el video.
+"""
+
+with open("novel.txt", "w") as file:
+    file.write("It was a dark and stormy night")
+
+"""
+Acerca de este código
+La instrucción with open() crea un objeto de archivo y lo asigna al archivo variable. La función open() toma 
+dos argumentos: el nombre del archivo y el modo. En este caso, el modo es w, que significa "escribir". 
+Esto le dice a la función open() que cree un nuevo archivo si no existe, o que sobrescriba 
+el archivo existente si existe.
+
+El método write() del objeto de archivo toma una cadena como argumento y escribe la cadena en el archivo. En este caso, 
+la cadena es "Era una noche oscura y tormentosa".
+
+¿Qué sucede con el contenido anterior de un archivo cuando lo abrimos usando "w" (modo "escritura")?
+
+R Los contenidos antiguos se eliminan tan pronto como abrimos el archivo.
+
+
+"""

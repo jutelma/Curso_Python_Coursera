@@ -17,7 +17,8 @@ gratuita.
 
 Mac OS: Sistema operativo desarrollado por Apple
 
-Sistema operativo (SO): Software que gestiona todo lo que sucede en la computadora, compuesto por dos partes
+Sistema operativo (SO): Software que gestiona todo
+lo que sucede en la computadora, compuesto por dos partes
 principales: el kernel y el espacio de usuario.
 
 Espacio de usuario:

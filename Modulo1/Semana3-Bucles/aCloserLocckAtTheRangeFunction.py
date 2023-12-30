@@ -14,7 +14,7 @@ for n in range(x, y, z):
   Entonces, cuando se realiza una llamada de rango a la quinta posición del índice usando el rango (5), el índice
   apunta al valor numérico de 4.
 
-Número de índice    1er índice      2do índice      3er índice     4to índice       5to índice
+Número de índice    1.º índice      2.º índice      3.º índice     4.º índice       5.º índice
 
 Valor                  0              1                  2              3                4
 
