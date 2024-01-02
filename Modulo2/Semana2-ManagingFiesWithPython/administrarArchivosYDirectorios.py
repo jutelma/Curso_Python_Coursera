@@ -63,7 +63,7 @@ os.path.exists("userlist.txt")
 # archivo y determinan si un archivo existe, respectivamente. En el siguiente fragmento de código, ¿qué crees que se
 # imprimirá si el archivo no existe?
 
-#import os
+# import os
 
 file = "file.dat"
 if os.path.isfile(file):
@@ -116,3 +116,8 @@ os.listdir("website")
 # los nombres de los archivos sin directorio. Entonces, usando os.path.join, unimos el directorio a cada uno de esos
 # nombres de archivo y creamos una Cadena con un nombre completo válido. Finalmente, usamos ese nombre completo para
 # llamar a os.path.isdir y verificar si es un directorio o un archivo.
+
+# ¿Cuál es el propósito de la función os.path.join?
+
+# Crea una cadena que contiene directorios concatenados multiplataformas.
+
