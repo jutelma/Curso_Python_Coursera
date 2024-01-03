@@ -39,3 +39,13 @@ Nombre: Charlie Rivera, Teléfono: 698-746-3357, Función: Desarrollador web
 
 # ¿Cuál de las siguientes debemos hacer antes de usar la función csv.writer()?
 # R Abra el archivo con permisos de escritura.
+
+"""
+Revisión: Generación de CSV
+Introducción
+Esta lectura de seguimiento está organizada para que coincida con el contenido del vídeo que sigue. Contiene 
+el mismo código que se muestra en el siguiente vídeo. Estos bloques de código le brindarán la oportunidad de ver cómo 
+está escrito el código, le permitirán practicar su ejecución y pueden usarse como referencia para consultar. 
+
+Puede seguir la lectura mientras el instructor analiza el código o revisar el código después de ver el video.
+"""
