@@ -1,0 +1,59 @@
+Using username "student-00-3a3354fe8195".
+Authenticating with public key "imported-openssh-key"
+Linux linux-instance 4.9.0-15-amd64 #1 SMP Debian 4.9.258-1 (2021-03-08) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-00-3a3354fe8195@linux-instance:~$
+student-00-3a3354fe8195@linux-instance:~$
+student-00-3a3354fe8195@linux-instance:~$ cd data
+student-00-3a3354fe8195@linux-instance:~/data$ ls
+employees.csv
+student-00-3a3354fe8195@linux-instance:~/data$ cat employees.csv
+Full Name, Username, Department
+Audrey Miller, audrey, Development
+Arden Garcia, ardeng, Sales
+Bailey Thomas, baileyt, Human Resources
+Blake Sousa, sousa, IT infrastructure
+Cameron Nguyen, nguyen, Marketing
+Charlie Grey, greyc, Development
+Chris Black, chrisb, User Experience Research
+Courtney Silva, silva, IT infrastructure
+Darcy Johnsonn, darcy, IT infrastructure
+Elliot Lamb, elliotl, Development
+Emery Halls, halls, Sales
+Flynn McMillan, flynn, Marketing
+Harley Klose, harley, Human Resources
+Jean May Coy, jeanm, Vendor operations
+Kay Stevens, kstev, Sales
+Lio Nelson, lion, User Experience Research
+Logan Tillas, tillas, Vendor operations
+Micah Lopes, micah, Development
+Sol Mansi, solm, IT infrastructure
+student-00-3a3354fe8195@linux-instance:~/data$ cd ~/scripts
+student-00-3a3354fe8195@linux-instance:~/scripts$ nano generate_report.py
+student-00-3a3354fe8195@linux-instance:~/scripts$ chmod +x generate_report.py
+student-00-3a3354fe8195@linux-instance:~/scripts$ ./generate_report.py
+[{'Department': 'Development', 'Username': 'audrey', 'Full Name': 'Audrey Miller'}, {'Department': 'Sales', 'Username': 'ardeng', 'Full Name': 'Arden Garcia'}, {'Department': 'Human Resources', 'Username': 'baileyt', 'Full Name': 'Bailey Thomas'}, {'Department': 'IT infrastructure', 'Username': 'sousa', 'Full Name': 'Blake Sousa'}, {'Department': 'Marketing', 'Username': 'nguyen', 'Full Name': 'Cameron Nguyen'}, {'Department': 'Development', 'Username': 'greyc', 'Full Name': 'Charlie Grey'}, {'Department': 'User Experience Research', 'Username': 'chrisb', 'Full Name': 'Chris Black'}, {'Department': 'IT infrastructure', 'Username': 'silva', 'Full Name': 'Courtney Silva'}, {'Department': 'IT infrastructure', 'Username': 'darcy', 'Full Name': 'Darcy Johnsonn'}, {'Department': 'Development', 'Username': 'elliotl', 'Full Name': 'Elliot Lamb'}, {'Department': 'Sales', 'Username': 'halls', 'Full Name': 'Emery Halls'}, {'Department': 'Marketing', 'Username': 'flynn', 'Full Name': 'Flynn McMillan'}, {'Department': 'Human Resources', 'Username': 'harley', 'Full Name': 'Harley Klose'}, {'Department': 'Vendor operations', 'Username': 'jeanm', 'Full Name': 'Jean May Coy'}, {'Department': 'Sales', 'Username': 'kstev', 'Full Name': 'Kay Stevens'}, {'Department': 'User Experience Research', 'Username': 'lion', 'Full Name': 'Lio Nelson'}, {'Department': 'Vendor operations', 'Username': 'tillas', 'Full Name': 'Logan Tillas'}, {'Department': 'Development', 'Username': 'micah', 'Full Name': 'Micah Lopes'}, {'Department': 'IT infrastructure', 'Username': 'solm', 'Full Name': 'Sol Mansi'}]
+student-00-3a3354fe8195@linux-instance:~/scripts$
+student-00-3a3354fe8195@linux-instance:~/scripts$
+student-00-3a3354fe8195@linux-instance:~/scripts$
+student-00-3a3354fe8195@linux-instance:~/scripts$
+student-00-3a3354fe8195@linux-instance:~/scripts$ nano generate_report.py
+student-00-3a3354fe8195@linux-instance:~/scripts$ nano generate_report.py
+student-00-3a3354fe8195@linux-instance:~/scripts$ cd ~/data
+student-00-3a3354fe8195@linux-instance:~/data$ ls
+employees.csv  report.txt
+student-00-3a3354fe8195@linux-instance:~/data$ cat report.txt
+Development:4
+Human Resources:2
+IT infrastructure:4
+Marketing:2
+Sales:3
+User Experience Research:2
+Vendor operations:2
+student-00-3a3354fe8195@linux-instance:~/data$
