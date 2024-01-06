@@ -38,7 +38,21 @@ student-00-3a3354fe8195@linux-instance:~/data$ cd ~/scripts
 student-00-3a3354fe8195@linux-instance:~/scripts$ nano generate_report.py
 student-00-3a3354fe8195@linux-instance:~/scripts$ chmod +x generate_report.py
 student-00-3a3354fe8195@linux-instance:~/scripts$ ./generate_report.py
-[{'Department': 'Development', 'Username': 'audrey', 'Full Name': 'Audrey Miller'}, {'Department': 'Sales', 'Username': 'ardeng', 'Full Name': 'Arden Garcia'}, {'Department': 'Human Resources', 'Username': 'baileyt', 'Full Name': 'Bailey Thomas'}, {'Department': 'IT infrastructure', 'Username': 'sousa', 'Full Name': 'Blake Sousa'}, {'Department': 'Marketing', 'Username': 'nguyen', 'Full Name': 'Cameron Nguyen'}, {'Department': 'Development', 'Username': 'greyc', 'Full Name': 'Charlie Grey'}, {'Department': 'User Experience Research', 'Username': 'chrisb', 'Full Name': 'Chris Black'}, {'Department': 'IT infrastructure', 'Username': 'silva', 'Full Name': 'Courtney Silva'}, {'Department': 'IT infrastructure', 'Username': 'darcy', 'Full Name': 'Darcy Johnsonn'}, {'Department': 'Development', 'Username': 'elliotl', 'Full Name': 'Elliot Lamb'}, {'Department': 'Sales', 'Username': 'halls', 'Full Name': 'Emery Halls'}, {'Department': 'Marketing', 'Username': 'flynn', 'Full Name': 'Flynn McMillan'}, {'Department': 'Human Resources', 'Username': 'harley', 'Full Name': 'Harley Klose'}, {'Department': 'Vendor operations', 'Username': 'jeanm', 'Full Name': 'Jean May Coy'}, {'Department': 'Sales', 'Username': 'kstev', 'Full Name': 'Kay Stevens'}, {'Department': 'User Experience Research', 'Username': 'lion', 'Full Name': 'Lio Nelson'}, {'Department': 'Vendor operations', 'Username': 'tillas', 'Full Name': 'Logan Tillas'}, {'Department': 'Development', 'Username': 'micah', 'Full Name': 'Micah Lopes'}, {'Department': 'IT infrastructure', 'Username': 'solm', 'Full Name': 'Sol Mansi'}]
+[{'Department': 'Development', 'Username': 'audrey', 'Full Name': 'Audrey Miller'}, {'Department': 'Sales',
+'Username': 'ardeng', 'Full Name': 'Arden Garcia'}, {'Department': 'Human Resources', 'Username': 'baileyt',
+'Full Name': 'Bailey Thomas'}, {'Department': 'IT infrastructure', 'Username': 'sousa', 'Full Name': 'Blake Sousa'},
+{'Department': 'Marketing', 'Username': 'nguyen', 'Full Name': 'Cameron Nguyen'}, {'Department': 'Development',
+'Username': 'greyc', 'Full Name': 'Charlie Grey'}, {'Department': 'User Experience Research', 'Username': 'chrisb',
+'Full Name': 'Chris Black'}, {'Department': 'IT infrastructure', 'Username': 'silva', 'Full Name': 'Courtney Silva'},
+{'Department': 'IT infrastructure', 'Username': 'darcy', 'Full Name': 'Darcy Johnsonn'}, {'Department': 'Development',
+'Username': 'elliotl', 'Full Name': 'Elliot Lamb'}, {'Department': 'Sales', 'Username': 'halls', 'Full Name':
+'Emery Halls'}, {'Department': 'Marketing', 'Username': 'flynn', 'Full Name': 'Flynn McMillan'}, {'Department':
+'Human Resources', 'Username': 'harley', 'Full Name': 'Harley Klose'}, {'Department': 'Vendor operations',
+'Username': 'jeanm', 'Full Name': 'Jean May Coy'}, {'Department': 'Sales', 'Username': 'kstev', 'Full Name':
+'Kay Stevens'}, {'Department': 'User Experience Research', 'Username': 'lion', 'Full Name': 'Lio Nelson'},
+{'Department': 'Vendor operations', 'Username': 'tillas', 'Full Name': 'Logan Tillas'}, {'Department': 'Development',
+'Username': 'micah', 'Full Name': 'Micah Lopes'}, {'Department': 'IT infrastructure', 'Username': 'solm',
+'Full Name': 'Sol Mansi'}]
 student-00-3a3354fe8195@linux-instance:~/scripts$
 student-00-3a3354fe8195@linux-instance:~/scripts$
 student-00-3a3354fe8195@linux-instance:~/scripts$
