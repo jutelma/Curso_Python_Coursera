@@ -14,13 +14,13 @@ Estas dos opciones son dos de las técnicas comunes para evitar bucles infinitos
 utilizar break, puedes controlar cuándo se detiene el bucle y evitar que se ejecute indefinidamente.
 
 
-3 El siguiente codigo contiene un bucle infinito, lo que significa que el interprete de Python no sabe cuando salir
+3 El siguiente código contiene un bucle infinito, lo que significa que el interprete de Python no sabe cuando salir
 de bucle una vez que se completa la tarea. Para resolver el problema, necesitara :
 
-1 Encuentra el error en el codigo.
+1 Encuentra el error en el código.
 2 Arregle el bucle para que haya una condicion de salida.
 
-Sugerencia: intente ejecutar du funcion con el numero 0 como
+Sugerencia: intente ejecutar du function con el número 0 como
 entrada y observe el resultado. Tenga en cuenta que los bloques de codigo de coursera expiran despues de 5 segundos de
 ejecutar un bucle infinito. Si recibes este error de tiempo de espera, significa que el bucle infinito no se ha
 solucionado.
