@@ -5,15 +5,12 @@ Estos bloques de código le brindarán la oportunidad de ver cómo está escrito
 ejecución y pueden usarse como referencia para consultar.
 
 
-import subprocess
-subprocess.run(["date"])
+Import subprocess.run(["date"])
 
-import subprocess
-subprocess.run(["date"])
+import subprocess.run(["date"])
 subprocess.run(["sleep", "2"])
 
-import subprocess
-subprocess.run(["date"])
+import subprocess.run(["date"])
 subprocess.run(["sleep", "2"])
 result = subprocess.run(["ls", "this_file_does_not_exist"])
 print(result.returncode)
@@ -27,15 +24,12 @@ ejecución y pueden usarse como referencia para consultar.
 Puede seguir la lectura mientras el instructor analiza el código o revisar el código después de ver el video.
 
 
-import subprocess
-subprocess.run(["date"])
+Import subprocess.run(["date"])
 
-import subprocess
-subprocess.run(["date"])
+import subprocess.run(["date"])
 subprocess.run(["sleep", "2"])
 
-import subprocess
-subprocess.run(["date"])
+import subprocess.run(["date"])
 subprocess.run(["sleep", "2"])
 result = subprocess.run(["ls", "this_file_does_not_exist"])
 print(result.returncode)
